@@ -61,12 +61,3 @@ export class AppHome extends LitElement {
     console.log('This is your home page');
   }
 
-  share() {
-    if ((navigator as any).share) {
-      (navigator as any).share({
-        title: 'PWABuilder pwa-starter',
-        text: 'Check out the PWABuilder pwa-starter!',
-        url: 'https://github.com/pwa-builder/pwa-starter',
-      });
-    }
-  }
